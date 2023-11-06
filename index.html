@@ -48,7 +48,9 @@
                                 <div class="close_btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none">
                                         <g id="Menu / Close_LG">
-                                            <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path id="Vector" d="M21 21L12 12M12 12L3 3M12 12L21.0001 3M12 12L3 21.0001"
+                                                stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
                                         </g>
                                     </svg>
                                 </div>
@@ -88,7 +90,7 @@
         <div class="container">
             <ul class="navbar">
                 <li class="nav_item">
-                    <a href="" class="nav_link">ARTICLES</a>
+                    <a href="./assets/pages/articles.html" class="nav_link">ARTICLES</a>
                 </li>
                 <li class="nav_item">
                     <a href="./assets/pages/briefing.html" class="nav_link">THE BRIEFING</a>
@@ -179,66 +181,8 @@
                                     <h1>Thursday, August 10, 2023</h1>
                                 </a>
                                 <div class="audio_box">
-                                    <div class="d_none">
-                                        <div class="custom-control custom-switch">
-                                            <input type="checkbox" class="custom-control-input" id="audioUploadSwitch">
-                                            <label class="custom-control-label font-weight-light"
-                                                for="audioUploadSwitch">Disable upload and use
-                                                default audio file</label>
-                                        </div>
-                                    </div>
-                                    <div class="d_none">
-                                        <div class="file-upload-wrapper">
-                                            <div class="card card-body w-100 view file-upload">
-                                                <input type="file" id="audiofile" class="file_upload">
-                                                <p class="file-upload-infos-message">Audio upload - Drag and drop or
-                                                    click</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <audio
-                                        src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Anthem_of_Europe_%28US_Navy_instrumental_short_version%29.ogg"
-                                        id="track"></audio>
-                                    <div class="player">
-                                        <div class="progress">
-                                            <div class="play_btn">
-                                                <div id="start" class="control-icon icon_start">
-                                                    <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M38 19.75C38 30.2891 29.4648 38.75 19 38.75C8.46094 38.75 0 30.2891 0 19.75C0 9.28516 8.46094 0.75 19 0.75C29.4648 0.75 38 9.28516 38 19.75ZM13.0625 13.2188V26.2812C13.0625 26.9492 13.3594 27.543 13.9531 27.8398C14.4727 28.2109 15.2148 28.1367 15.7344 27.8398L26.4219 21.3086C26.9414 21.0117 27.3125 20.418 27.3125 19.75C27.3125 19.1562 26.9414 18.5625 26.4219 18.2656L15.7344 11.7344C15.2148 11.3633 14.4727 11.3633 13.9531 11.7344C13.3594 12.0312 13.0625 12.625 13.0625 13.2188Z"
-                                                            fill="currentColor" />
-                                                    </svg>
-                                                </div>
-                                                <div class="icon_stop control-icon pause" id="pause">
-                                                    <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M38 19.75C38 30.2891 29.4648 38.75 19 38.75C8.46094 38.75 0 30.2891 0 19.75C0 9.28516 8.46094 0.75 19 0.75C29.4648 0.75 38 9.28516 38 19.75ZM13.0625 13.2188V26.2812C13.0625 26.9492 13.3594 27.543 13.9531 27.8398C14.4727 28.2109 15.2148 28.1367 15.7344 27.8398L26.4219 21.3086C26.9414 21.0117 27.3125 20.418 27.3125 19.75C27.3125 19.1562 26.9414 18.5625 26.4219 18.2656L15.7344 11.7344C15.2148 11.3633 14.4727 11.3633 13.9531 11.7344C13.3594 12.0312 13.0625 12.625 13.0625 13.2188Z"
-                                                            fill="currentColor" />
-                                                        <rect x="5" y="5" width="29" height="29" rx="14.5"
-                                                            fill="currentColor" />
-                                                        <rect x="12.25" y="9.53125" width="4.53125" height="19.9375"
-                                                            rx="1" fill="white" />
-                                                        <rect x="21.3125" y="9.53125" width="4.53125" height="19.9375"
-                                                            rx="1" fill="white" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <span id="currentTime" class="time">00:00</span>
-
-                                            <input id="timeslieder" class="timeslieder" type="range" value="0" min="0"
-                                                max="100" step="0.001" />
-                                            <span id="duration" class="time">00:00:00</span>
-                                            <div id="reset" class="control-icon">
-                                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M1.875 0.75C2.48438 0.75 3 1.26562 3 1.875V6.70312C4.82812 3.5625 8.25 1.54688 12 1.54688C17.7656 1.54688 22.5 6.23438 22.5 12C22.5 17.8125 17.7656 22.5 12 22.5C9.51562 22.5 7.125 21.6562 5.25 20.1094C4.78125 19.6875 4.73438 18.9844 5.10938 18.5156C5.53125 18.0469 6.23438 17.9531 6.70312 18.375C8.15625 19.5938 10.0312 20.25 12 20.25C16.5469 20.25 20.25 16.5938 20.25 12C20.25 7.45312 16.5469 3.75 12 3.75C8.85938 3.75 6.04688 5.57812 4.64062 8.25H9.375C9.98438 8.25 10.5 8.76562 10.5 9.375C10.5 10.0312 9.98438 10.5 9.375 10.5H1.875C1.21875 10.5 0.75 10.0312 0.75 9.375V1.875C0.75 1.26562 1.21875 0.75 1.875 0.75Z"
-                                                        fill="currentColor" />
-                                                </svg>
-                                            </div>
-                                        </div>
+                                    <div class="audio-player"
+                                        data-file="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3">
                                     </div>
                                 </div>
                                 <div class="article_parts">
@@ -340,68 +284,11 @@
                                 <h4>Wednesday, July 5, 2023</h4>
                             </div>
                         </div>
-                        <div class="audio_box">
-                            <div class="d_none">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="audioUploadSwitch">
-                                    <label class="custom-control-label font-weight-light"
-                                        for="audioUploadSwitch">Disable upload and use
-                                        default audio file</label>
-                                </div>
-                            </div>
-                            <div class="d_none">
-                                <div class="file-upload-wrapper">
-                                    <div class="card card-body w-100 view file-upload">
-                                        <input type="file" id="audiofile" class="file_upload">
-                                        <p class="file-upload-infos-message">Audio upload - Drag and drop or
-                                            click</p>
+                         <div class="audio_box">
+                                    <div class="audio-player"
+                                        data-file="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3">
                                     </div>
                                 </div>
-                            </div>
-                            <audio
-                                src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Anthem_of_Europe_%28US_Navy_instrumental_short_version%29.ogg"
-                                id="track"></audio>
-                            <div class="player">
-                                <div class="progress">
-                                    <div class="play_btn">
-                                        <div id="start" class="control-icon icon_start">
-                                            <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M38 19.75C38 30.2891 29.4648 38.75 19 38.75C8.46094 38.75 0 30.2891 0 19.75C0 9.28516 8.46094 0.75 19 0.75C29.4648 0.75 38 9.28516 38 19.75ZM13.0625 13.2188V26.2812C13.0625 26.9492 13.3594 27.543 13.9531 27.8398C14.4727 28.2109 15.2148 28.1367 15.7344 27.8398L26.4219 21.3086C26.9414 21.0117 27.3125 20.418 27.3125 19.75C27.3125 19.1562 26.9414 18.5625 26.4219 18.2656L15.7344 11.7344C15.2148 11.3633 14.4727 11.3633 13.9531 11.7344C13.3594 12.0312 13.0625 12.625 13.0625 13.2188Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </div>
-                                        <div class="icon_stop control-icon pause" id="pause">
-                                            <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M38 19.75C38 30.2891 29.4648 38.75 19 38.75C8.46094 38.75 0 30.2891 0 19.75C0 9.28516 8.46094 0.75 19 0.75C29.4648 0.75 38 9.28516 38 19.75ZM13.0625 13.2188V26.2812C13.0625 26.9492 13.3594 27.543 13.9531 27.8398C14.4727 28.2109 15.2148 28.1367 15.7344 27.8398L26.4219 21.3086C26.9414 21.0117 27.3125 20.418 27.3125 19.75C27.3125 19.1562 26.9414 18.5625 26.4219 18.2656L15.7344 11.7344C15.2148 11.3633 14.4727 11.3633 13.9531 11.7344C13.3594 12.0312 13.0625 12.625 13.0625 13.2188Z"
-                                                    fill="currentColor" />
-                                                <rect x="5" y="5" width="29" height="29" rx="14.5" fill="currentColor" />
-                                                <rect x="12.25" y="9.53125" width="4.53125" height="19.9375" rx="1"
-                                                    fill="white" />
-                                                <rect x="21.3125" y="9.53125" width="4.53125" height="19.9375" rx="1"
-                                                    fill="white" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <span id="currentTime" class="time">00:00</span>
-
-                                    <input id="timeslieder" class="timeslieder" type="range" value="0" min="0" max="100"
-                                        step="0.001" />
-                                    <span id="duration" class="time">00:00:00</span>
-                                    <div id="reset" class="control-icon">
-                                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.875 0.75C2.48438 0.75 3 1.26562 3 1.875V6.70312C4.82812 3.5625 8.25 1.54688 12 1.54688C17.7656 1.54688 22.5 6.23438 22.5 12C22.5 17.8125 17.7656 22.5 12 22.5C9.51562 22.5 7.125 21.6562 5.25 20.1094C4.78125 19.6875 4.73438 18.9844 5.10938 18.5156C5.53125 18.0469 6.23438 17.9531 6.70312 18.375C8.15625 19.5938 10.0312 20.25 12 20.25C16.5469 20.25 20.25 16.5938 20.25 12C20.25 7.45312 16.5469 3.75 12 3.75C8.85938 3.75 6.04688 5.57812 4.64062 8.25H9.375C9.98438 8.25 10.5 8.76562 10.5 9.375C10.5 10.0312 9.98438 10.5 9.375 10.5H1.875C1.21875 10.5 0.75 10.0312 0.75 9.375V1.875C0.75 1.26562 1.21875 0.75 1.875 0.75Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="right">
                         <ul class="blog_items">
@@ -559,68 +446,11 @@
                                 <h4>Wednesday, July 5, 2023</h4>
                             </div>
                         </div>
-                        <div class="audio_box">
-                            <div class="d_none">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="audioUploadSwitch">
-                                    <label class="custom-control-label font-weight-light"
-                                        for="audioUploadSwitch">Disable upload and use
-                                        default audio file</label>
-                                </div>
-                            </div>
-                            <div class="d_none">
-                                <div class="file-upload-wrapper">
-                                    <div class="card card-body w-100 view file-upload">
-                                        <input type="file" id="audiofile" class="file_upload">
-                                        <p class="file-upload-infos-message">Audio upload - Drag and drop or
-                                            click</p>
+                         <div class="audio_box">
+                                    <div class="audio-player"
+                                        data-file="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3">
                                     </div>
                                 </div>
-                            </div>
-                            <audio
-                                src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Anthem_of_Europe_%28US_Navy_instrumental_short_version%29.ogg"
-                                id="track"></audio>
-                            <div class="player">
-                                <div class="progress">
-                                    <div class="play_btn">
-                                        <div id="start" class="control-icon icon_start">
-                                            <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M38 19.75C38 30.2891 29.4648 38.75 19 38.75C8.46094 38.75 0 30.2891 0 19.75C0 9.28516 8.46094 0.75 19 0.75C29.4648 0.75 38 9.28516 38 19.75ZM13.0625 13.2188V26.2812C13.0625 26.9492 13.3594 27.543 13.9531 27.8398C14.4727 28.2109 15.2148 28.1367 15.7344 27.8398L26.4219 21.3086C26.9414 21.0117 27.3125 20.418 27.3125 19.75C27.3125 19.1562 26.9414 18.5625 26.4219 18.2656L15.7344 11.7344C15.2148 11.3633 14.4727 11.3633 13.9531 11.7344C13.3594 12.0312 13.0625 12.625 13.0625 13.2188Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </div>
-                                        <div class="icon_stop control-icon pause" id="pause">
-                                            <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M38 19.75C38 30.2891 29.4648 38.75 19 38.75C8.46094 38.75 0 30.2891 0 19.75C0 9.28516 8.46094 0.75 19 0.75C29.4648 0.75 38 9.28516 38 19.75ZM13.0625 13.2188V26.2812C13.0625 26.9492 13.3594 27.543 13.9531 27.8398C14.4727 28.2109 15.2148 28.1367 15.7344 27.8398L26.4219 21.3086C26.9414 21.0117 27.3125 20.418 27.3125 19.75C27.3125 19.1562 26.9414 18.5625 26.4219 18.2656L15.7344 11.7344C15.2148 11.3633 14.4727 11.3633 13.9531 11.7344C13.3594 12.0312 13.0625 12.625 13.0625 13.2188Z"
-                                                    fill="currentColor" />
-                                                <rect x="5" y="5" width="29" height="29" rx="14.5" fill="currentColor" />
-                                                <rect x="12.25" y="9.53125" width="4.53125" height="19.9375" rx="1"
-                                                    fill="white" />
-                                                <rect x="21.3125" y="9.53125" width="4.53125" height="19.9375" rx="1"
-                                                    fill="white" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <span id="currentTime" class="time">00:00</span>
-
-                                    <input id="timeslieder" class="timeslieder" type="range" value="0" min="0" max="100"
-                                        step="0.001" />
-                                    <span id="duration" class="time">00:00:00</span>
-                                    <div id="reset" class="control-icon">
-                                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.875 0.75C2.48438 0.75 3 1.26562 3 1.875V6.70312C4.82812 3.5625 8.25 1.54688 12 1.54688C17.7656 1.54688 22.5 6.23438 22.5 12C22.5 17.8125 17.7656 22.5 12 22.5C9.51562 22.5 7.125 21.6562 5.25 20.1094C4.78125 19.6875 4.73438 18.9844 5.10938 18.5156C5.53125 18.0469 6.23438 17.9531 6.70312 18.375C8.15625 19.5938 10.0312 20.25 12 20.25C16.5469 20.25 20.25 16.5938 20.25 12C20.25 7.45312 16.5469 3.75 12 3.75C8.85938 3.75 6.04688 5.57812 4.64062 8.25H9.375C9.98438 8.25 10.5 8.76562 10.5 9.375C10.5 10.0312 9.98438 10.5 9.375 10.5H1.875C1.21875 10.5 0.75 10.0312 0.75 9.375V1.875C0.75 1.26562 1.21875 0.75 1.875 0.75Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="right">
                         <ul class="blog_items">
@@ -686,68 +516,11 @@
                                 <h4>Wednesday, July 5, 2023</h4>
                             </div>
                         </div>
-                        <div class="audio_box">
-                            <div class="d_none">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="audioUploadSwitch">
-                                    <label class="custom-control-label font-weight-light"
-                                        for="audioUploadSwitch">Disable upload and use
-                                        default audio file</label>
-                                </div>
-                            </div>
-                            <div class="d_none">
-                                <div class="file-upload-wrapper">
-                                    <div class="card card-body w-100 view file-upload">
-                                        <input type="file" id="audiofile" class="file_upload">
-                                        <p class="file-upload-infos-message">Audio upload - Drag and drop or
-                                            click</p>
+                         <div class="audio_box">
+                                    <div class="audio-player"
+                                        data-file="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3">
                                     </div>
                                 </div>
-                            </div>
-                            <audio
-                                src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Anthem_of_Europe_%28US_Navy_instrumental_short_version%29.ogg"
-                                id="track"></audio>
-                            <div class="player">
-                                <div class="progress">
-                                    <div class="play_btn">
-                                        <div id="start" class="control-icon icon_start">
-                                            <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M38 19.75C38 30.2891 29.4648 38.75 19 38.75C8.46094 38.75 0 30.2891 0 19.75C0 9.28516 8.46094 0.75 19 0.75C29.4648 0.75 38 9.28516 38 19.75ZM13.0625 13.2188V26.2812C13.0625 26.9492 13.3594 27.543 13.9531 27.8398C14.4727 28.2109 15.2148 28.1367 15.7344 27.8398L26.4219 21.3086C26.9414 21.0117 27.3125 20.418 27.3125 19.75C27.3125 19.1562 26.9414 18.5625 26.4219 18.2656L15.7344 11.7344C15.2148 11.3633 14.4727 11.3633 13.9531 11.7344C13.3594 12.0312 13.0625 12.625 13.0625 13.2188Z"
-                                                    fill="currentColor" />
-                                            </svg>
-                                        </div>
-                                        <div class="icon_stop control-icon pause" id="pause">
-                                            <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M38 19.75C38 30.2891 29.4648 38.75 19 38.75C8.46094 38.75 0 30.2891 0 19.75C0 9.28516 8.46094 0.75 19 0.75C29.4648 0.75 38 9.28516 38 19.75ZM13.0625 13.2188V26.2812C13.0625 26.9492 13.3594 27.543 13.9531 27.8398C14.4727 28.2109 15.2148 28.1367 15.7344 27.8398L26.4219 21.3086C26.9414 21.0117 27.3125 20.418 27.3125 19.75C27.3125 19.1562 26.9414 18.5625 26.4219 18.2656L15.7344 11.7344C15.2148 11.3633 14.4727 11.3633 13.9531 11.7344C13.3594 12.0312 13.0625 12.625 13.0625 13.2188Z"
-                                                    fill="currentColor" />
-                                                <rect x="5" y="5" width="29" height="29" rx="14.5" fill="currentColor" />
-                                                <rect x="12.25" y="9.53125" width="4.53125" height="19.9375" rx="1"
-                                                    fill="white" />
-                                                <rect x="21.3125" y="9.53125" width="4.53125" height="19.9375" rx="1"
-                                                    fill="white" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <span id="currentTime" class="time">00:00</span>
-
-                                    <input id="timeslieder" class="timeslieder" type="range" value="0" min="0" max="100"
-                                        step="0.001" />
-                                    <span id="duration" class="time">00:00:00</span>
-                                    <div id="reset" class="control-icon">
-                                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.875 0.75C2.48438 0.75 3 1.26562 3 1.875V6.70312C4.82812 3.5625 8.25 1.54688 12 1.54688C17.7656 1.54688 22.5 6.23438 22.5 12C22.5 17.8125 17.7656 22.5 12 22.5C9.51562 22.5 7.125 21.6562 5.25 20.1094C4.78125 19.6875 4.73438 18.9844 5.10938 18.5156C5.53125 18.0469 6.23438 17.9531 6.70312 18.375C8.15625 19.5938 10.0312 20.25 12 20.25C16.5469 20.25 20.25 16.5938 20.25 12C20.25 7.45312 16.5469 3.75 12 3.75C8.85938 3.75 6.04688 5.57812 4.64062 8.25H9.375C9.98438 8.25 10.5 8.76562 10.5 9.375C10.5 10.0312 9.98438 10.5 9.375 10.5H1.875C1.21875 10.5 0.75 10.0312 0.75 9.375V1.875C0.75 1.26562 1.21875 0.75 1.875 0.75Z"
-                                                fill="currentColor" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="col">
                         <div class="sec_title">
@@ -915,7 +688,7 @@
         </div>
         <div class="foot_bottom">
             <div class="container">
-                <p>copyright 2023, The Souther Baptist Theological Seminary.  All rights reserved.</p>
+                <p>copyright 2023, The Souther Baptist Theological Seminary. All rights reserved.</p>
             </div>
         </div>
     </footer>
