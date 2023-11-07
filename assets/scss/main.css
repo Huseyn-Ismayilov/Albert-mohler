@@ -1507,6 +1507,9 @@ button.swiper-pagination-bullet {
   display: block;
   margin: 0 60px;
 }
+.hero .left .article_item .image img {
+  border-bottom: 20px solid #9B3B2B;
+}
 .hero .right {
   width: 35%;
 }
