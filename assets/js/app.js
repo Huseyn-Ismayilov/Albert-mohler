@@ -234,6 +234,9 @@ $('.result .head .tags .tag .close_btn').click(function () {
 				console.log('play clicked');
 			});
 
+			// 
+
+			
 			//Pause function
 			$this.find('[data-pause]').on('click', function () {
 				audioFile.pause();
@@ -262,7 +265,13 @@ $('.result .head .tags .tag .close_btn').click(function () {
 
 				$elapsedSpan.text(m + ':' + s);
 			});
+			// 
 
+
+			$this.find(".reset_btn").click(function () {
+				audioFile.load();
+				$(this).parent().find('div[data-playhead]').css( { "margin-left" : "0"} )
+			});
 			//Clicking indicator-bar moves playhead and updates current time
 			$this.find('.indicator-container').on('click', function (event) {
 				var clickLocation = (event.pageX - $(this).offset().left) / (this).offsetWidth;
@@ -301,6 +310,18 @@ $('.audio_box .play_btn').click(function () {
 
 
 
+
+// var SKIP_s = 3;
+// var v = document.querySelector('audio');
+// var fw = document.querySelector('.reset_btn');
+// var rw = document.querySelector('.reset_btn');
+
+// // actually forward or rewind
+// fw.addEventListener('click', () => v.fastSeek(v.currentTime + SKIP_s));
+// rw.addEventListener('click', () => v.fastSeek(v.currentTime - SKIP_s));
+
+// // only enable buttons when the video is ready
+// v.addEventListener('canplay', () => fw.disabled = false, rw.disabled = false)
 
 
 

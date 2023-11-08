@@ -18,6 +18,10 @@
                 img {
                     border-bottom: 20px solid #9B3B2B;
                 }
+                .icon {
+                    left: 40px;
+                    top: 40px;
+                }
             }
         }
     }
@@ -28,6 +32,10 @@
         .article_item {
             .image {
                 box-shadow: var(--box-shadow-4);
+                .icon {
+                    right: 10px;
+                    top: 20px;
+                }
             }
 
             .details {
@@ -41,6 +49,17 @@
 
     .article_item {
         width: 100%;
+        .image {
+            position: relative;
+            .icon {
+                position: absolute;
+                z-index: 1;
+
+                svg {
+                    display: block;
+                }
+            }
+        }
     }
 
     .article_info {
@@ -211,6 +230,9 @@
     }
 }
 
+iframe {
+    display: block;
+}
 .article_item {
     .image {
         display: block;
@@ -218,6 +240,12 @@
 
         img {
             width: 100%;
+        }
+        iframe {
+            aspect-ratio: 56/31;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
     }
 
